@@ -1,0 +1,182 @@
+[
+    {
+        "id": "E3131700-0000-1111-91F0-05986F983191",
+        "name": "Thomas Gates",
+        "company": "Test Company 01",
+        "personGroup": "Co-Workers"
+    },
+    {
+        "id": "F223425A-0000-1111-B12C-11012ACD5A29",
+        "name": "Lars Bergar",
+        "company": "IAB",
+        "personGroup": "Co-Workers"
+    },
+    {
+        "id": "78DAC44A-0000-1111-AF14-119F8D128548",
+        "name": "512345470",
+        "company": "",
+        "personGroup": "Suppliers"
+    },
+    {
+        "id": "C8096454-0000-1111-B697-2573CBDF177B",
+        "name": "Joh Korck",
+        "company": "IAB",
+        "personGroup": "Suppliers"
+    },
+    {
+        "id": "7C19FBCF-0000-1111-B085-2F60D401538F",
+        "name": "Stef Zens",
+        "company": "IAB",
+        "personGroup": "Co-Workers"
+    },
+    {
+        "id": "FAAA0A05-0000-1111-AB22-31D186968B44",
+        "name": "Test Name",
+        "company": "And Test company",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "332C9B71-0000-1111-ABB5-38D12EEE40B0",
+        "name": " DD-1234-022093",
+        "company": "IAB",
+        "personGroup": "Co-Workers"
+    },
+    {
+        "id": "BB060EDB-0000-1111-8E29-4AAA9CCFC08B",
+        "name": "Perg Sabbox",
+        "company": "IAB",
+        "personGroup": "8498598"
+    },
+    {
+        "id": "7F0B0958-0000-1111-8312-4BB850685904",
+        "name": "Len Carlsson",
+        "company": "IAB",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "3113BC40-0000-1111-92DB-4E966ED2AF92",
+        "name": "Harry Potter",
+        "company": "Test Company 01",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "38EE6166-0000-1111-9909-55403AA917A3",
+        "name": "Bjn Hill",
+        "company": "IAB",
+        "personGroup": "Co-Workers"
+    },
+    {
+        "id": "ABE62F3F-0000-1111-B44B-62D36686DCA5",
+        "name": "Koler Smah",
+        "company": "IAB",
+        "personGroup": "Co-Workers"
+    },
+    {
+        "id": "C59CF465-0000-1111-BBD8-6FAABC86039E",
+        "name": "En Jakobsson1",
+        "company": "IAB",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "6D9C3C6B-0000-1111-8C93-6FE889408403",
+        "name": "75421234",
+        "company": "",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "38434D0F-0000-1111-B96F-7AF88799D6AA",
+        "name": "Elin Lindberg",
+        "company": "Test Norwegian Company 01",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "A91FD2E9-0000-1111-8798-81E774331532",
+        "name": "Marg Hill",
+        "company": "IAB",
+        "personGroup": "Managers"
+    },
+    {
+        "id": "95B8361C-0000-1111-8447-91607F9A80C3",
+        "name": "9567 34898",
+        "company": "98498",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "86FC0043-0000-1111-A97A-9990E9040C94",
+        "name": "First name 2 Last name 2",
+        "company": "IAB",
+        "personGroup": "Managers"
+    },
+    {
+        "id": "5A870533-0000-1111-A046-A87C7C69E9A7",
+        "name": "First name 1 Last name 1",
+        "company": "IAB",
+        "personGroup": "8498598"
+    },
+    {
+        "id": "31F7B9FD-0000-1111-85E5-B281C4BE7094",
+        "name": "Ell Hejsc",
+        "company": "IAB",
+        "personGroup": "Managers"
+    },
+    {
+        "id": "411FDF9F-0000-1111-9C26-BC45C446201F",
+        "name": "Ann Korner",
+        "company": "AnnCo",
+        "personGroup": "Managers"
+    },
+    {
+        "id": "CD25602B-0000-1111-9155-C9C6DAD10D2E",
+        "name": "Dm Gr",
+        "company": "IAB",
+        "personGroup": "8498598"
+    },
+    {
+        "id": "4747F556-0000-1111-A8D8-D3C58D90C0DB",
+        "name": "Max Beck",
+        "company": "IAB",
+        "personGroup": "Managers"
+    },
+    {
+        "id": "E9CDFF77-0000-1111-9ED8-DBC28AE67410",
+        "name": "bgfd nhgf",
+        "company": "mnjhgm",
+        "personGroup": "Managers"
+    },
+    {
+        "id": "AA838B71-9999-1111-9E0A-DC7BD537A614",
+        "name": "Jonag Mustang",
+        "company": "Test Company 01",
+        "personGroup": "Co-Workers"
+    },
+    {
+        "id": "92C60990-0000-1111-91B3-EDD69AE15A95",
+        "name": "Thom Berg",
+        "company": "IAB",
+        "personGroup": "Co-Workers"
+    },
+    {
+        "id": "CF2E0ECD-0000-1111-93CD-F154B2D188AB",
+        "name": "Sven Cukrer",
+        "company": "Test Norwegian Company 02",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "8B288153-0000-1111-8547-F5A0924CDCC6",
+        "name": "Ken Tjsen",
+        "company": "MONTASJELAGET AS",
+        "personGroup": "Workers"
+    },
+    {
+        "id": "3257D349-0000-1111-A873-2318D48F7134",
+        "name": "Max Smith",
+        "company": "Greedy",
+        "personGroup": "Managers"
+    },
+    {
+        "id": "FA9AAB09-0000-1111-9F7F-28086E883075",
+        "name": "Piter Bor",
+        "company": "Test Company 01",
+        "personGroup": "Co-Workers"
+    }
+]

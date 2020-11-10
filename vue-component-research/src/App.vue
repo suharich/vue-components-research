@@ -1,17 +1,23 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--HelloWorld msg="Welcome to Your Vue.js App"/-->
+    <br/>
+    <h2>Vue-Good-Table example</h2>
+    <vue-good-table-example></vue-good-table-example>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import VueGoodTableExample from './components/VueGoodTableExample.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld,
+    VueGoodTableExample
   }
 }
 </script>
