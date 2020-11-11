@@ -28,35 +28,10 @@
 </template>
 
 <script>
-import EmployeeGridData from './employeeGridData.json'
-import {_} from 'vue-underscore';
+import EmployeeGridData from './employeeGridData.json';
+import { convertToGroupedRows } from '../utils/dataset-converter.vue';
 
-var convertJsonForGrouping = function(jsonData) {
-  var result = [];
-
-  _.each(jsonData, function(item) {
-    var foundGroup = _.find(result, function(el) {
-      return el.label == item.company;
-    });
-    
-    if (typeof(foundGroup) == "undefined") {
-
-      var newGroup = {
-        "mode": "span",
-        "label": item.company,
-        "html": false,
-        "children": [ item ]};
-
-      result.push(newGroup);
-    } else {
-      foundGroup.children.push(item);
-    }
-  });
-
-  return result;
-}
-
-var groupedData = convertJsonForGrouping(EmployeeGridData);
+var groupedData = convertToGroupedRows(EmployeeGridData, 'company');
 
 export default {
   name: 'vue-good-table-example',
