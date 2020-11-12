@@ -27,7 +27,7 @@
       <template #cell(name)="row">
         <span>
           <span class="triangle" :class="{'expand': isExpanded(row)}" @click="row.toggleDetails"></span> 
-          <span>{{row.item.label}}</span>
+          <span><b>{{row.item.label}}</b></span>
         </span>
       </template>
 
@@ -38,9 +38,32 @@
       </template>
 
       <template #row-details="row">
-            <b-row b-col v-for="(rowItem) in row.item.children" :key="rowItem.id"> 
-              <b-col v-show="isShown(key)" v-for="(value, key) in rowItem" :key="key">{{value}}</b-col>
-            </b-row>
+            <!-- <b-row b-col v-for="(rowItem) in row.item.children" :key="rowItem.id"> 
+              <b-col 
+                  v-show="isShownGroupedColuumn(key)" 
+                  v-for="(value, key) in rowItem" 
+                  :key="key">
+                {{value}}</b-col>
+            </b-row> -->
+            <b-table-simple>
+              <!-- <b-thead>
+                <b-tr>
+                  <b-th v-show="isShownGroupedColuumn(field.key)" v-for="(field) in fields" :key="field.key">
+                    {{field.label}}
+                  </b-th>
+                 </b-tr>
+              </b-thead> -->
+              <b-tbody>
+                <b-tr v-for="(rowItem) in row.item.children" :key="rowItem.id">
+                  <b-td
+                   v-show="isShownGroupedColuumn(key)" 
+                  v-for="(value, key) in rowItem" 
+                  :key="key">
+                    {{value}}
+                  </b-td>
+                </b-tr>
+              </b-tbody>
+              </b-table-simple>
       </template>
     </b-table>
 
@@ -77,9 +100,9 @@ import { convertToGroupedRowsForBootstrap } from '../utils/dataset-converter.vue
         fields: [
           { key: 'name', label: 'Name', sortable: true, class: 'text-center', sortDirection: 'desc'},
           { key: 'company', label: 'Company', sortable: true, class: 'text-center', sortDirection: 'desc'},
-          { key: 'personGroup', label: 'Person Group', sortable: true, class: 'text-center', sortDirection: 'desc'},
+          { key: 'personGroup', label: 'Person Group', sortable: true, class: 'text-center', sortDirection: 'desc', colspanForGroup:2},
           { key: 'actions', label: 'Actions' }
-        ],
+        ],       
         totalRows: 1,
         currentPage: 1,
         perPage: 5,
@@ -94,7 +117,9 @@ import { convertToGroupedRowsForBootstrap } from '../utils/dataset-converter.vue
           title: '',
           content: ''
         },
-        showDetails: false
+        showDetails: false,
+        gropedFileds: [{ key:'name'}, {key:'company'}, {key:'personGroup' }, {key:'action'}],
+        groupeBy: "company",
       }
     },
     computed: {
@@ -114,11 +139,11 @@ import { convertToGroupedRowsForBootstrap } from '../utils/dataset-converter.vue
     methods: {
       itemsProvider(ctx, calback) {
         ctx = _.extend(ctx, {"showDetails": this.showDetails})
-        calback(convertToGroupedRowsForBootstrap(EmployeeGridData, 'company', ctx));
+        calback(convertToGroupedRowsForBootstrap(EmployeeGridData, this.groupeBy, ctx));
         this.totalRows = EmployeeGridData.length;
       },
-      isShown(columnKey) {
-        return ['name', 'company', 'personGroup'].indexOf(columnKey) >= 0;
+      isShownGroupedColuumn(columnKey) {
+        return _.find(this.gropedFileds, function(item){ return item.key == columnKey; }) != undefined
       },
       isExpanded(row) {
         return row.item._showDetails;
